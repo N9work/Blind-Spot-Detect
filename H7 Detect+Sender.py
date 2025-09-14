@@ -8,8 +8,8 @@ import usocket
 from ml.utils import NMS
 
 # ===== CONFIG =====
-SSID = "ESP32_AP"
-KEY = "12345678"
+SSID = "ESP32_SSID"
+KEY = "ESP32_PASS"
 ESP_IP = "192.168.4.1"  # IP ของ ESP32 AP
 PORT = 5005
 
@@ -40,7 +40,7 @@ sensor.set_framesize(sensor.QVGA)
 sensor.skip_frames(time=2000)
 
 # ===== Load Model =====
-model = ml.Model("model.lite")
+model = ml.Model("YOUR MODEL")
 print("Model Loaded:", model)
 
 # ===== Post Process FOMO =====
